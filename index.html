@@ -668,7 +668,7 @@ const FEMALE_QA = {"what is aquora": {"a": "Aquora is a complete smart water sys
     for(var i=0;i<RU_KEYS.length;i++){var set=RU_KEYS[i].set,sc=0;for(var j=0;j<qw.length;j++){if(set.indexOf(qw[j])>=0)sc++;}
       sc=sc/qw.length; if(sc>bs||(sc===bs&&sc>0&&set.length<bl)){bs=sc;best=RU_KEYS[i].f;bl=set.length;}}
     return bs>=0.5?(FQ_BYF[best]||null):null; }
-  function clipSrc(name,ru){ if(ru===undefined)ru=AQRU; return (ru&&window.AQ_RU_TOUR)?("presenter/ru/"+name+".mp4?v=r1"):("presenter/"+name+".mp4"+(/^\d+$/.test(name)?"?v=t37":"")); }
+  function clipSrc(name,ru){ if(ru===undefined)ru=AQRU; return (ru&&window.AQ_RU_TOUR)?("presenter/ru/"+name+".mp4?v=r2"):("presenter/"+name+".mp4"+(/^\d+$/.test(name)?"?v=t37":"")); }
   function answerFemale(q,g){ if(g===undefined)g=gen; if(g!==gen)return false;
     var qru=/[а-яё]/i.test(q);
     var nq=normQ(q), nq2=nq.replace(/[?!.,;:'"]/g,"").replace(/\s+/g," ").trim();
